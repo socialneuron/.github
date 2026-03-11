@@ -38,10 +38,12 @@ npx @socialneuron/mcp-server setup
 
 | Repo | Description |
 |------|------------|
+| [mcp-server](https://github.com/socialneuron/mcp-server) | MCP server — 51 tools for AI-assisted content operations |
 | [examples](https://github.com/socialneuron/examples) | Prompt-driven workflow templates — copy, paste, run |
 
 ### Links
 
 - [socialneuron.com](https://socialneuron.com) — Platform
+- [npm: @socialneuron/mcp-server](https://www.npmjs.com/package/@socialneuron/mcp-server) — npm package
 - [Documentation](https://socialneuron.com/docs) — Guides and API reference
 - [Pricing](https://socialneuron.com/pricing) — Plans and credits
