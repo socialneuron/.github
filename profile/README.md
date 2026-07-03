@@ -13,7 +13,7 @@ Every cycle produces smarter content than the last. Performance data feeds back 
 
 ## For Developers
 
-Social Neuron exposes **50+ MCP tools** that AI assistants call on your behalf. One prompt can orchestrate an entire content pipeline — fetching trends, applying your brand voice, generating posts, checking quality, and scheduling across platforms.
+Social Neuron exposes **96 MCP tools (94 over the remote endpoint)** that AI assistants call on your behalf. One prompt can orchestrate an entire content pipeline — fetching trends, applying your brand voice, generating posts, checking quality, and scheduling across platforms.
 
 ### Quick Start
 
@@ -28,7 +28,7 @@ npx @socialneuron/mcp-server setup
 | **Ideation** | Generate ideas from trends, informed by your past performance |
 | **Brand** | Extract and apply brand voice across all content |
 | **Content** | Generate scripts, carousels, images, video storyboards |
-| **Distribution** | Schedule and publish across LinkedIn, X, Instagram, TikTok, YouTube |
+| **Distribution** | Schedule and publish to YouTube and TikTok (live); Instagram pending review; more platforms in progress. |
 | **Analytics** | Pull engagement data and extract actionable insights |
 | **Planning** | Create, approve, and schedule weekly content plans |
 | **Quality** | Score content for brand alignment and predicted engagement |
@@ -38,6 +38,8 @@ npx @socialneuron/mcp-server setup
 
 | Repo | Description |
 |------|------------|
+| [mcp-server](https://github.com/socialneuron/mcp-server) | Primary MCP server and developer entry point |
+| [social-neuron-skill](https://github.com/socialneuron/social-neuron-skill) | OpenClaw skill for using Social Neuron through agent workflows |
 | [examples](https://github.com/socialneuron/examples) | Prompt-driven workflow templates — copy, paste, run |
 
 ### Links
