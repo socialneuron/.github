@@ -1,49 +1,41 @@
 # Social Neuron
 
-**AI-powered content creation platform** — the closed-loop system that turns performance data into smarter content.
+Social Neuron plans, creates, schedules and measures social content for your brand. It is content that learns what works: results from what you publish feed back into what gets made next.
 
-```
-  Ideate ──→ Create ──→ Distribute
-    ↑                       │
-    │                       ▼
-    └──── Analyze ◄──── Publish
-```
+## Use Social Neuron in your assistant
 
-Every cycle produces smarter content than the last. Performance data feeds back into ideation — so your best-performing formats, topics, and posting times automatically shape what gets created next.
+Every option below signs in to your own Social Neuron account.
 
-## For Developers
+| Assistant | How to add it | Status |
+|---|---|---|
+| Grok Build | Plugin source: [plugins/socialneuron](https://github.com/socialneuron/mcp-server/tree/main/plugins/socialneuron). Install from the repository: `grok plugin install socialneuron/mcp-server#plugins/socialneuron --trust` | Available from the repository. Marketplace listing is in review. |
+| ChatGPT | Add as a custom connector in Developer mode with the URL `https://mcp.socialneuron.com/mcp`, then sign in in your browser. | Custom connector. |
+| Claude | Add as a custom connector with the URL `https://mcp.socialneuron.com/mcp`, then sign in in your browser. | Custom connector. Not in the connector directory yet. |
+| Cursor | Use the npm package: add `npx -y @socialneuron/mcp-server` as an MCP server in `.cursor/mcp.json` ([setup](https://github.com/socialneuron/mcp-server#quick-start)). | npm package. |
+| Any MCP client, run locally | `npx -y @socialneuron/mcp-server login --device`, then add `npx -y @socialneuron/mcp-server` as a server. | [npm package](https://www.npmjs.com/package/@socialneuron/mcp-server), MIT. |
 
-Social Neuron exposes **96 MCP tools (94 over the remote endpoint)** that AI assistants call on your behalf. One prompt can orchestrate an entire content pipeline — fetching trends, applying your brand voice, generating posts, checking quality, and scheduling across platforms.
+About the Grok Build plugin: Free MIT plugin; requires a Social Neuron account. Generation uses your plan's credits.
 
-### Quick Start
+The hosted endpoint and the npm package are two ways to reach the same service. The hosted endpoint uses browser sign-in. The npm package runs on your machine and signs in with a device login or an API key. Both need a plan that includes MCP access; the consent page shows what your plan allows.
 
-```bash
-npx @socialneuron/mcp-server setup
-```
+## Repositories
 
-### Tool Categories
+| Repository | What it is |
+|---|---|
+| [mcp-server](https://github.com/socialneuron/mcp-server) | The MCP server, REST API and CLI published as `@socialneuron/mcp-server`, plus the Grok Build plugin under `plugins/socialneuron` |
+| [examples](https://github.com/socialneuron/examples) | Prompt-driven workflow templates to copy and run |
+| [social-neuron-skill](https://github.com/socialneuron/social-neuron-skill) | A skill package for agent hosts that load skills |
 
-| Category | What It Does |
-|----------|-------------|
-| **Ideation** | Generate ideas from trends, informed by your past performance |
-| **Brand** | Extract and apply brand voice across all content |
-| **Content** | Generate scripts, carousels, images, video storyboards |
-| **Distribution** | Schedule and publish to YouTube and TikTok (live); Instagram pending review; more platforms in progress. |
-| **Analytics** | Pull engagement data and extract actionable insights |
-| **Planning** | Create, approve, and schedule weekly content plans |
-| **Quality** | Score content for brand alignment and predicted engagement |
-| **Autopilot** | Configure hands-free content pipelines |
+## Licence
 
-### Repos
+The code in these repositories is MIT licensed. Use of the hosted Social Neuron service is covered by the Terms of Service, not by the MIT licence.
 
-| Repo | Description |
-|------|------------|
-| [mcp-server](https://github.com/socialneuron/mcp-server) | Primary MCP server and developer entry point |
-| [social-neuron-skill](https://github.com/socialneuron/social-neuron-skill) | OpenClaw skill for using Social Neuron through agent workflows |
-| [examples](https://github.com/socialneuron/examples) | Prompt-driven workflow templates — copy, paste, run |
+## Links
 
-### Links
-
-- [socialneuron.com](https://socialneuron.com) — Platform
-- [Documentation](https://socialneuron.com/docs) — Guides and API reference
-- [Pricing](https://socialneuron.com/pricing) — Plans and credits
+- [socialneuron.com](https://socialneuron.com)
+- [For developers](https://socialneuron.com/for-developers)
+- [Documentation](https://docs.socialneuron.com/docs/getting-started)
+- [Terms of Service](https://socialneuron.com/terms)
+- [Privacy Policy](https://socialneuron.com/privacy)
+- [Support](https://socialneuron.com/contact)
+- [Report a security issue](https://github.com/socialneuron/mcp-server/security/policy)
